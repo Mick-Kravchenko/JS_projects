@@ -1,0 +1,30 @@
+<HTML>
+<HEAD>
+<TITLE> Перевернути натуральне число </TITLE>
+<script>
+<!-- //
+function roll (obj)
+{
+var a = Number(obj.num.value);
+var b, sum=0;
+while(a>0)
+  {
+   b=a%10;
+   sum=sum*10+b;
+   a=parseInt(a/10);
+  }  
+obj.res.value= sum}
+//-->
+</script>
+</HEAD>
+<BODY>
+<H4> Перевернути натуральне число </H4>
+<FORM name="form1">
+Число: <input type="text" size=8 name="num"><hr>
+
+<input type="button" value= Визначити onClick="roll(form1)">
+<input type="text" size=8 name="res"><hr>
+<input type="reset">
+</FORM>
+</BODY>
+</HTML>

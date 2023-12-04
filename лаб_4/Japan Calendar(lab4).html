@@ -1,0 +1,102 @@
+<HTML>
+<HEAD>
+<TITLE> Давньояпонський календар </TITLE>
+<script>
+<!-- //
+  var s;
+function fname(a)
+{
+  var names;
+
+  switch (a)
+{ case 1: 
+  names="пацюка";
+  s="m";
+  break;
+  case 2:   
+  names="корови";
+  s="f";
+  break;
+  case 3: 
+  names="тигра";
+  s="m";
+  break;
+  case 4: 
+    names="зайця";
+	s="m";
+  break;
+  case 5: 
+    names="дракона";
+	s="m";
+  break;
+  case 6:   
+  names="змії";
+  s="f";
+  break;
+  case 7: 
+    names="коня";
+	s="m";
+  break;
+  case 8: 
+    names="вівці";
+	s="f";
+  break;
+  case 9: 
+    names="мавпи";
+	s="f";
+  break;
+  case 10: 
+    names="курки";
+	s="f";
+  break;
+  case 11: 
+    names="собаки";
+	s="f";
+  break;
+  case 12: 
+    names="свині";
+	s="f";
+  break;
+}
+return names;
+}
+
+function check (obj)
+{
+// var t=new Date();
+// t.setYear(Number(obj.Grig.value));
+var t=Number(obj.Grig.value);
+ var difference=Math.abs(t-1983);
+ var count=Math.floor(difference/60);
+ difference=difference-(count*60);
+ var color="";
+ var name1="";
+  
+  if (difference<=12) {name1=fname((difference)); if (s=="m") {color="зеленого";} else {color="зеленої";}}
+  else if (12<difference<=24) {name1=fname(difference-12); if (s=="m") {color="червоний";} else {color="червоної";}}
+  else if (24<difference<=36) {name1=fname(difference-24); if (s=="m") {color="жовтий";} else {color="жовтої";}}
+  else if (36<difference<=48) {name1=fname(difference-36); if (s=="m") {color="білий";} else {color="білої";}}
+  else if (48<difference<=60) {name1=fname(difference-48); if (s=="m") {color="чорний";} else {color="чорної";}}
+
+  
+ obj.Jap.value="Рік"+" "+color+" "+name1+"\r\n";
+}
+
+
+
+//-->
+</script>
+</HEAD>
+<BODY>
+<H4> Визначення року за давньояпонським календарем </H4>
+<FORM name="form1">
+Рік за григоріанським календарем: <input type="text" size=8 name="Grig"><hr>
+<script>
+</script>
+Рік за давньояпонським календарем: <input type="text" size=25 name="Jap"><hr>
+
+<input type="button" value= Визначити onClick="check(form1)">
+<input type="reset">
+</FORM>
+</BODY>
+</HTML>

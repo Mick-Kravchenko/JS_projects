@@ -1,0 +1,44 @@
+<HTML>
+<HEAD>
+<TITLE> Щасливі квитки </TITLE>
+<script>
+<!-- //
+function check (a)
+{
+var b=new Array();
+var i=5;
+var result;
+while(a>0)
+  {
+   b[i]=a%10;
+   a=parseInt(a/10);
+   i--;
+  }  
+  if(b[0]+b[1]+b[2]==b[3]+b[4]+b[5]) {result=true}
+  else {result=false}
+return result}
+
+function count(obj)
+{
+ var k=0;
+ if(check(Number(obj.t1.value))==true) {k++}
+ if(check(Number(obj.t2.value))==true) {k++}
+ if(check(Number(obj.t3.value))==true) {k++}
+ obj.res.value=k;
+}
+//-->
+</script>
+</HEAD>
+<BODY>
+<H4> Знайти кількість щасливих квитків </H4>
+<FORM name="form1">
+Білет1: <input type="text" size=8 name="t1"><hr>
+Білет2: <input type="text" size=8 name="t2"><hr>
+Білет3: <input type="text" size=8 name="t3"><hr>
+
+<input type="button" value= Визначити onClick="count(form1)">
+<input type="text" size=8 name="res"><hr>
+<input type="reset">
+</FORM>
+</BODY>
+</HTML>

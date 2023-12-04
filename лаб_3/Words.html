@@ -1,0 +1,36 @@
+<HTML>
+<HEAD>
+<TITLE> Кількість слів </TITLE>
+<script>
+<!-- //
+function check (obj)
+{
+ if(obj.arr.value=="") {alert("Введіть слова у рядок!");}
+ else {
+ var counter=1;
+ if (obj.arr.value[0]=" ") {counter=0;}
+ else {counter=1;}
+ for (var i=0; i <(obj.arr.value).length; i++)
+ {
+  if (obj.arr.value[i]==" ") {counter++;}
+ }
+ obj.res.value=counter+1;
+       }
+}
+
+//-->
+</script>
+</HEAD>
+<BODY>
+<H4> Обрахування кількості слів </H4>
+<FORM name="form1">
+Рядок: <input type="text" size=25 name="arr"><hr>
+<script>
+</script>
+Кількість слів у рядку: <input type="text" size=8 name="res"><hr>
+
+<input type="button" value= Визначити onClick="check(form1)">
+<input type="reset">
+</FORM>
+</BODY>
+</HTML>

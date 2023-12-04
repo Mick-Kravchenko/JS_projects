@@ -1,0 +1,29 @@
+<HTML>
+<HEAD>
+<TITLE> Пробіли </TITLE>
+<script>
+<!-- //
+function compress (obj)
+{
+ if(obj.arr.value=="") {alert("Введіть слова у рядок!");}
+ else {
+ obj.res.value=(obj.arr.value).replace(/ +/g, ' ').trim();
+       }
+}
+
+//-->
+</script>
+</HEAD>
+<BODY>
+<H4> Стиснення рядка </H4>
+<FORM name="form1">
+Рядок: <input type="text" size=35 name="arr"><hr>
+<script>
+</script>
+Стиснений ряядок: <input type="text" size=25 name="res"><hr>
+
+<input type="button" value= Визначити onClick="compress(form1)">
+<input type="reset">
+</FORM>
+</BODY>
+</HTML>

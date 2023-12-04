@@ -1,0 +1,28 @@
+<HTML>
+ <HEAD>
+ <title> Обчислення площі кола </title>
+<script>
+function s_circle(obj)
+{obj.res.value=3.14*obj.num1.value* obj.num1.value}
+</script>
+ </HEAD>
+ <BODY>
+ <P> Обчислення площі кола </P>
+
+<FORM name="form1">
+<script>
+document.write ("Радіус:") 
+</script>
+ <input type="text" size=7 name="num1"
+ onChange="s_circle(form1)">
+ <hr>
+<script>
+document.write ("Площа кола:") 
+</script>
+ <input type="text" size=7 name="res"><hr>
+ <input type="reset" value=Оновити>
+ </FORM>
+ 
+
+ </BODY>
+ </HTML>

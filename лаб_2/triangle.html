@@ -1,0 +1,27 @@
+<HTML>
+<HEAD>
+<TITLE> Перевірити трикутник </TITLE>
+<script>
+<!-- //
+function triangle_check (obj )
+{
+var a = Number(obj.num1.value);
+var b = Number(obj.num2.value);
+var c = Number(obj.num3.value);
+if (a+b<c||a+c<b||b+c<a) {alert("Такий трикутник побудувати не можливо")} else {alert("Такий трикутник існує")}
+}
+//-->
+</script>
+</HEAD>
+<BODY>
+<H4> Чи можна побудувати трикутник </H4>
+<FORM name="form1">	
+Cторона 1: <input type="text" size=8 name="num1"><hr>
+Сторона 2: <input type="text" size=8 name="num2"><hr>
+Сторона 3: <input type="text" size=8 name="num3"><hr>
+
+<input type="button" value= Перевірити onClick="triangle_check(form1)">
+<input type="reset">
+</FORM>
+</BODY>
+</HTML>

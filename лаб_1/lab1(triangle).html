@@ -1,0 +1,30 @@
+<HTML>
+ <HEAD>
+ <title> Обчислення гіпотенузи трикутника </title>
+<script>
+var t=0
+function tr_gipotenuse(obj)
+{obj.res.value=Math.sqrt((obj.num1.value*obj.num1.value)+(obj.num2.value*obj.num2.value))
+}
+</script>
+ </HEAD>
+ <BODY>
+ <P> Обчислення гіпотенузи трикутника </P>
+
+<FORM name="form1">
+Катет 1:
+ <input type="text" size=7 name="num1">
+ <hr>
+Катет 2:
+ <input type="text" size=7 name="num2"
+ onChange="tr_gipotenuse(form1)">
+ <hr>
+
+Гіпотенуза:
+ <input type="text" size=7 name="res"><hr>
+ <input type="reset" value=Оновити>
+ </FORM>
+ 
+
+ </BODY>
+ </HTML>

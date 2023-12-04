@@ -1,0 +1,28 @@
+<HTML>
+ <HEAD>
+ <title> Test </title>
+ 
+ </HEAD>
+ <BODY>
+ <P> Test </P>
+<script>
+var s, p, i=0, k=0
+s=confirm("2+2=4?")
+if(s==true){alert("Правильно!"); i=i+1} else {alert("Ні!"); k=k+1}
+s=confirm("2+3=6?")
+if(s==false){alert("Правильно!"); i=i+1} else {alert("Ні!"); k=k+1}
+s=confirm("2+4=6?")
+if(s==true){alert("Правильно!"); i=i+1} else {alert("Ні!"); k=k+1}
+p=prompt("2+2=?", )
+if (p==4) {alert("Правильно!"); i=i+1} else {alert("Ні!"); k=k+1}
+p=prompt("2+3=?", )
+if (p==5) {alert("Правильно!"); i=i+1} else {alert("Ні!"); k=k+1}
+p=prompt("2+4=?", )
+if (p==6) {alert("Правильно!"); i=i+1} else {alert("Ні!"); k=k+1}
+if(i>=5) {alert("Чудово")}
+else if (i>=3) {alert("Добре")} else alert("Погано")
+alert("Сумма балів="+(i)+"\n"+"Неправильні відповіді="+(k))
+</script>
+
+ </BODY>
+ </HTML>
